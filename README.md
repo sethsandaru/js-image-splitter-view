@@ -4,6 +4,8 @@ Simple JS/JQuery Library to create an Image Splitter View. Best use-case is for 
 Demo (demo file is in the demo folder of this repository):   
 ![Hehe](https://i.imgur.com/6pF4gzp.gif)
 
+Online Demo: [https://sethphat.com/js-image-splitter-view/demo/](https://sethphat.com/js-image-splitter-view/demo/)
+
 Version: **1.0.0**
 
 ## Dependencies
