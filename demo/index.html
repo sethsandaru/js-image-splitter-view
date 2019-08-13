@@ -1,46 +1,86 @@
 <html>
-  <head>
+<head>
     <title>Demo Image Splitter UIView</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" /> 
-    <link href="../dist/css/image.splitter.view.css" rel="stylesheet" /> 
-  </head>
-  <body>
+            src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="../dist/css/image.splitter.view.css" rel="stylesheet"/>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.9/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.9/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
     <h1 class="text-center pt-4">
-      Demo Image Splitter UIView - Seth Phat
+        Demo Image Splitter UIView - Seth Phat
     </h1>
 
     <div class="container pb-4">
-      <div class="splitter-container" id="splitterContainer">
+        <h2>Default Usage</h2>
+        <div class="splitter-container" id="splitterContainer">
             <div>
                 <img class="img-responsive" src="1.png" style="height: 700px;">
             </div>
             <div>
-                <img class="img-responsive" src="2.jpg" style="height: 700px;">
+                <img class="img-responsive" src="2.png" style="height: 700px;">
             </div>
         </div>
+        <pre><code class="html">        &lt;div class=&quot;splitter-container&quot; id=&quot;splitterContainer&quot;&gt;
+            &lt;div&gt;
+                &lt;img class=&quot;img-responsive&quot; src=&quot;1.png&quot; style=&quot;height: 700px;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;img class=&quot;img-responsive&quot; src=&quot;2.jpg&quot; style=&quot;height: 700px;&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script&gt;
+            $(document).ready(function () {
+                // init all image splitter here
+                $(&quot;#splitterContainer&quot;).imageSplitter();
+            });
+        &lt;/script&gt;</code></pre>
+
+        <h2>Specific Color for Splitter</h2>
+        <div class="splitter-container is-primary" id="splitterContainer2">
+            <div>
+                <img class="img-responsive" src="1.png" style="height: 700px;">
+            </div>
+            <div>
+                <img class="img-responsive" src="2.png" style="height: 700px;">
+            </div>
+        </div>
+
+        <pre><code class="html">        &lt;div class=&quot;splitter-container is-primary&quot; id=&quot;splitterContainer&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;splitter-container is-success&quot; id=&quot;splitterContainer&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;splitter-container is-info&quot; id=&quot;splitterContainer&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;splitter-container is-warning&quot; id=&quot;splitterContainer&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;splitter-container is-danger&quot; id=&quot;splitterContainer&quot;&gt;...&lt;/div&gt;</code></pre>
+
     </div>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="page-footer font-small blue">
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2019 Copyright:<a href="https://sethphat.com"> SethPhat.com - Seth Phat</a>
-      </div>
-      <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright:<a href="https://sethphat.com"> SethPhat.com - Seth Phat</a> <br>
+            Thanks to <a href="https://www.flaticon.com/">FlatIcon</a> for the Resize Icon :D
+        </div>
+        <!-- Copyright -->
 
     </footer>
-    <!-- Footer -->
+<!-- Footer -->
 
-	  <script src="../dist/js/jquery.image.splitter.view.js"></script>
-    <script>
-      $(document).ready(function() {
+<script src="../dist/js/jquery.image.splitter.view.js"></script>
+<script>
+    $(document).ready(function () {
+        // init all image splitter here
         $("#splitterContainer").imageSplitter();
-      });
-    </script>		
-  </body>
+        $("#splitterContainer2").imageSplitter();
+    });
+</script>
+</body>
 </html>

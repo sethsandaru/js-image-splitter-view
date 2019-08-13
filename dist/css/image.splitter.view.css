@@ -40,3 +40,23 @@
 	border-radius: 32px;
     cursor: ew-resize;
 }
+
+.splitter-container.is-info .splitter, .splitter-container.is-info .splitter:before {
+    background-color: hsl(204, 86%, 53%);
+}
+
+.splitter-container.is-success .splitter, .splitter-container.is-success .splitter:before {
+    background-color: hsl(141, 71%, 48%);
+}
+
+.splitter-container.is-warning .splitter, .splitter-container.is-warning .splitter:before {
+    background-color: hsl(48, 100%, 67%);
+}
+
+.splitter-container.is-danger .splitter, .splitter-container.is-danger .splitter:before {
+    background-color: hsl(348, 100%, 61%);
+}
+
+.splitter-container.is-primary .splitter, .splitter-container.is-primary .splitter:before {
+    background-color: hsl(171, 100%, 41%);
+}

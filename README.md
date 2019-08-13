@@ -1,10 +1,10 @@
 # js-image-splitter-view
-Simple JS/JQuery Library to create an Image Splitter View.
+Simple JS/JQuery Library to create an Image Splitter View. Best use-case is for Compare Products/Images/... Website :D
 
-Demo: 
+Demo (demo file is in the demo folder of this repository):   
+![Hehe](https://i.imgur.com/i3UWNXH.gif)
 
-
-Version: **0.0.1**
+Version: **1.0.0**
 
 ## Dependencies
 - JQuery
@@ -40,6 +40,24 @@ You need prepare this HTML structure before initialize the UI View:
 	});
 </script>
 ```
+
+Result:   
+![Result Default](https://i.imgur.com/h866olV.png)
+
+### Available Colors for Splitter Control
+- .is-primary
+- .is-success
+- .is-info
+- .is-warning
+- .is-danger
+
+You need to add it like this:
+```html
+<div class="splitter-container is-primary" id="splitterContainer">
+```
+
+Result:   
+![Splitter Control Image](https://i.imgur.com/J2TMZWx.png)
 
 ## Important Note
 - You have to make sure both of your images is full-width and have a same width & height. Otherwise it will break.
