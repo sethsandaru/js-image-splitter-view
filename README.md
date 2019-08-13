@@ -2,7 +2,7 @@
 Simple JS/JQuery Library to create an Image Splitter View. Best use-case is for Compare Products/Images/... Website :D
 
 Demo (demo file is in the demo folder of this repository):   
-![Hehe](https://i.imgur.com/i3UWNXH.gif)
+![Hehe](https://i.imgur.com/6pF4gzp.gif)
 
 Version: **1.0.0**
 
