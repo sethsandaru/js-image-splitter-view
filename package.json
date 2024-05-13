@@ -11,7 +11,7 @@
     "image splitter view",
     "2 images compare view"
   ],
-  "author": "Phat Tran <phattranminh96@gmail.com> (https://sethphat.com)",
+  "author": "Seth Chen <me@sethphat.com>",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
